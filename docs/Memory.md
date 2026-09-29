@@ -87,6 +87,7 @@ $$
 - [x] **Phase 2 Complete:** Member 2 implemented regression pipeline (`Linear Regression` RMSE: 0.9216).
 - [x] **Phase 3 Complete:** Member 2 implemented classification pipeline (`Gradient Boosting` Weighted F1: 0.3956).
 - [ ] **Phase 4 Active:** Member 3 deploying Streamlit UI integration (`app/main.py`).
+- [x] Structure reorg (Members 1–2): notebooks split into `01_data_cleaning` / `02_eda` / `03_regression`; `src/train_regression.py` → `src/regression.py` (LR/KNN/DT/RF, MAE/MSE/RMSE/R²); `results/model_comparison.csv` + `results/graphs/` generated; `dataset/tv_shows.csv` added as canonical input.
 
 ---
 

@@ -9,7 +9,7 @@ from typing import Tuple
 import pandas as pd
 
 
-def load_raw_data(filepath: str = "dataset/tv_shows_raw.csv") -> pd.DataFrame:
+def load_raw_data(filepath: str = "dataset/tv_shows.csv") -> pd.DataFrame:
     """Loads raw dataset from CSV file."""
     path = Path(filepath)
     if not path.exists():
@@ -69,6 +69,9 @@ def clean_tv_shows_data(df: pd.DataFrame) -> pd.DataFrame:
     df_clean['imdb_rating'] = pd.to_numeric(df_clean['imdb_rating'], errors='coerce')
     df_clean = df_clean.dropna(subset=['imdb_rating'])
     df_clean = df_clean[(df_clean['imdb_rating'] >= 1.0) & (df_clean['imdb_rating'] <= 10.0)]
+
+    # Remove duplicate rows
+    df_clean = df_clean.drop_duplicates()
 
     # Assign classification target tier
     df_clean['success_category'] = df_clean['imdb_rating'].apply(bin_rating)
