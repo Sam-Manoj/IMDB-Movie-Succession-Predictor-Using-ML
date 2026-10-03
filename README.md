@@ -135,6 +135,15 @@ npm run dev
 
 ---
 
+## 👥 Contributors
+
+| Contributor | GitHub Profile |
+| --- | --- |
+| **Sharon Sam** | [@Sharon-Sam14](https://github.com/Sharon-Sam14) |
+| **Ronald** | [@Ronald372](https://github.com/Ronald372) |
+
+---
+
 ## 📄 License
 
 This project is licensed under the **MIT License**.
