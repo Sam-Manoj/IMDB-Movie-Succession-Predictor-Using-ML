@@ -141,6 +141,7 @@ npm run dev
 | --- | --- |
 | **Sharon Sam** | [@Sharon-Sam14](https://github.com/Sharon-Sam14) |
 | **Ronald** | [@Ronald372](https://github.com/Ronald372) |
+| **Sam Manoj** | [@Sam-Manoj](https://github.com/Sam-Manoj) |
 
 ---
 
